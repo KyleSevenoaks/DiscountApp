@@ -1,0 +1,155 @@
+@page "/dashboard"
+@using Microsoft.AspNetCore.Components.Web
+
+<PageTitle>Fordelstorget | Dashboard</PageTitle>
+
+<div class="min-h-screen bg-gray-50 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- User Profile Section -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <img class="h-16 w-16 rounded-full object-cover" src="@currentUser.AvatarUrl"
+                        alt="@currentUser.Name's avatar" />
+                    <div class="absolute bottom-0 right-0 h-4 w-4 rounded-full bg-green-400 border-2 border-white">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Welcome back, @currentUser.Name!</h2>
+                    <p class="text-gray-500">You have @availableDiscounts.Count() discount codes available</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Available Discounts Section -->
+        <div class="space-y-6">
+            <h3 class="text-lg font-semibold text-gray-900">Available Discounts</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                @foreach (var discount in availableDiscounts)
+                {
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="flex items-center space-x-3 ">
+                                    <img src="@discount.MerchantLogo" alt="@discount.MerchantName logo"
+                                        class="h-10 w-10 rounded-full object-contain" />
+                                    <h4 class="text-lg font-semibold text-gray-900">@discount.MerchantName</h4>
+                                </div>
+                                @* <span
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium @(discount.ExpiresIn < 3 ? "bg-red-100 text-red-800" : "bg-blue-100 text-blue-800")">
+                                    @if (discount.ExpiresIn == 1)
+                                    {
+                                        <span>Expires today</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Expires in @discount.ExpiresIn days</span>
+                                    }
+                                </span> *@
+                            </div>
+                            <p class="text-gray-600 mb-4">@discount.Description</p>
+                            <div class="flex items-center justify-between">
+                                <div class="bg-gray-100 px-3 py-1 rounded-md">
+                                    <span class="text-2xl font-bold text-gray-900">@discount.DiscountPercentage%</span>
+                                    <span class="text-gray-600">off</span>
+                                </div>
+                                <button @onclick="() => ClaimDiscount(discount.Id)"
+                                    class="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-150 ease-out">
+                                    <span
+                                        class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                                    <div class="flex items-center space-x-2">
+                                        <span>Kjøp</span>
+                                        <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private UserProfile currentUser = new()
+    {
+        Name = "Kyle Sevenoaks",
+        AvatarUrl = "https://ui-avatars.com/api/?name=Kyle+Sevenoaks&background=0D8ABC&color=fff"
+    };
+
+    private List<DiscountOffer> availableDiscounts = new()
+{
+new DiscountOffer
+{
+Id = 1,
+MerchantName = "Odeon",
+MerchantLogo = "https://ui-avatars.com/api/?name=Odeon&background=396eca&color=fff",
+Description = "Rabaterte priser på kinobilletter for medlemmer",
+DiscountPercentage = 25,
+ExpiresIn = 5
+},
+new DiscountOffer
+{
+Id = 2,
+MerchantName = "NF Kino",
+MerchantLogo = "https://ui-avatars.com/api/?name=NF+Kino&background=e91b72&color=fff",
+Description = "Ekstra rabaterte priser på kinobilletter for medlemmer",
+DiscountPercentage = 50,
+ExpiresIn = 1
+},
+new DiscountOffer
+{
+Id = 3,
+MerchantName = "Amazon",
+MerchantLogo = "https://ui-avatars.com/api/?name=Amazon&background=FF9900&color=fff",
+Description = "Prime membership discount for first-time subscribers",
+DiscountPercentage = 30,
+ExpiresIn = 7
+},
+new DiscountOffer
+{
+Id = 4,
+MerchantName = "Uber Eats",
+MerchantLogo = "https://ui-avatars.com/api/?name=Uber+Eats&background=000000&color=fff",
+Description = "Save on your next 3 food deliveries",
+DiscountPercentage = 20,
+ExpiresIn = 2
+}
+};
+
+    private async Task ClaimDiscount(int discountId)
+    {
+        // TODO: Implement claim logic
+        var discount = availableDiscounts.FirstOrDefault(d => d.Id == discountId);
+        if (discount != null)
+        {
+            Console.WriteLine($"Claiming discount: {discount.MerchantName} - {discount.DiscountPercentage}% off");
+            // Here you would typically:
+            // 1. Call an API to claim the discount
+            // 2. Show a success message
+            // 3. Update the UI to reflect the claimed status
+        }
+    }
+
+    public class UserProfile
+    {
+        public string Name { get; set; } = "";
+        public string AvatarUrl { get; set; } = "";
+    }
+
+    public class DiscountOffer
+    {
+        public int Id { get; set; }
+        public string MerchantName { get; set; } = "";
+        public string MerchantLogo { get; set; } = "";
+        public string Description { get; set; } = "";
+        public int DiscountPercentage { get; set; }
+        public int ExpiresIn { get; set; }
+    }
+}

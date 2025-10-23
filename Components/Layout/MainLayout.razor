@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@inherits LayoutComponentBase
+
+<div class="flex h-screen bg-gray-100">
+    <div class="w-64 bg-gray-800">
+        <NavMenu />
+    </div>
+
+    <main class="flex-1 flex flex-col">
+        <div class="bg-white shadow-sm py-4 px-6 flex justify-end">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank"
+                class="text-gray-600 hover:text-gray-900">About</a>
+        </div>
+
+        <article class="flex-1 p-6 overflow-auto">
+            @Body
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui" class="fixed bottom-0 w-full bg-red-100 border-t-4 border-red-500 p-4 hidden" data-nosnippet>
+    <div class="flex justify-between items-center">
+        <p class="text-red-700">An unhandled error has occurred.</p>
+        <div class="flex gap-4">
+            <a href="." class="text-red-700 hover:text-red-900 underline">Reload</a>
+            <button class="text-red-700 hover:text-red-900"
+                onclick="this.parentElement.parentElement.parentElement.style.display='none'">🗙</button>
+        </div>
+    </div>
+</div>
