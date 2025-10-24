@@ -1,0 +1,51 @@
+<div class="modal-backdrop">
+    <div class="modal bg-white rounded-lg shadow-2xl w-full max-w-md p-6 relative">
+        <h4 class="text-lg font-semibold mb-2">@Title</h4>
+        <p class="text-gray-700 mb-6">@Message</p>
+        <div class="flex justify-end gap-3">
+            <button @onclick="() => OnConfirm.InvokeAsync()"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">@ConfirmText</button>
+            <button @onclick="() => OnCancel.InvokeAsync()"
+                class="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400">@CancelText</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = "Dialog Title";
+
+    [Parameter]
+    public string Message { get; set; } = "Dialog message goes here.";
+
+    [Parameter]
+    public string ConfirmText { get; set; } = "Confirm";
+
+    [Parameter]
+    public string CancelText { get; set; } = "Cancel";
+
+    [Parameter]
+    public EventCallback OnConfirm { get; set; }
+
+    [Parameter]
+    public EventCallback OnCancel { get; set; }
+}
+
+<style>
+    .modal-backdrop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .8);
+        z-index: 9999;
+    }
+
+    .modal {
+        max-height: 200px;
+    }
+</style>

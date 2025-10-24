@@ -22,27 +22,30 @@ main[b-5ks2hzqkqm] {
     align-items: center;
 }
 
-    .top-row[b-5ks2hzqkqm]  a, .top-row[b-5ks2hzqkqm]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
+.top-row[b-5ks2hzqkqm]  a,
+.top-row[b-5ks2hzqkqm]  .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
 
-    .top-row[b-5ks2hzqkqm]  a:hover, .top-row[b-5ks2hzqkqm]  .btn-link:hover {
-        text-decoration: underline;
-    }
+.top-row[b-5ks2hzqkqm]  a:hover,
+.top-row[b-5ks2hzqkqm]  .btn-link:hover {
+    text-decoration: underline;
+}
 
-    .top-row[b-5ks2hzqkqm]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row[b-5ks2hzqkqm]  a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 @media (max-width: 640.98px) {
     .top-row[b-5ks2hzqkqm] {
         justify-content: space-between;
     }
 
-    .top-row[b-5ks2hzqkqm]  a, .top-row[b-5ks2hzqkqm]  .btn-link {
+    .top-row[b-5ks2hzqkqm]  a,
+    .top-row[b-5ks2hzqkqm]  .btn-link {
         margin-left: 0;
     }
 }
@@ -71,7 +74,8 @@ main[b-5ks2hzqkqm] {
         width: 0;
     }
 
-    .top-row[b-5ks2hzqkqm], article[b-5ks2hzqkqm] {
+    .top-row[b-5ks2hzqkqm],
+    article[b-5ks2hzqkqm] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
@@ -91,12 +95,12 @@ main[b-5ks2hzqkqm] {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss[b-5ks2hzqkqm] {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss[b-5ks2hzqkqm] {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
 /* _content/DiscountApp/Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-p8hf7fdlpt] {
     appearance: none;

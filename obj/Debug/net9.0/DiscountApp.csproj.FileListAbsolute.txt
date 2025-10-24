@@ -64,8 +64,6 @@
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/lec7j8epqp-h1s4sie4z3.gz
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/pohre5cklu-63fj8s7r0e.gz
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/irq8gqp117-0j3bgjxly4.gz
-/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/93g004vv5n-xw0oy20fit.gz
-/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/xky5b16azr-xw0oy20fit.gz
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/staticwebassets.build.json
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/staticwebassets.development.json
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -80,4 +78,7 @@
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/DiscountApp.pdb
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/DiscountApp.genruntimeconfig.cache
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/ref/DiscountApp.dll
-/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-r3e4w37wo3.gz
+/Users/kyle/git/DiscountApp/obj/Debug/net9.0/DiscountApp.sourcelink.json
+/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-h0c8mmnqr6.gz
+/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/93g004vv5n-z4kv9dgzoa.gz
+/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/xky5b16azr-z4kv9dgzoa.gz
