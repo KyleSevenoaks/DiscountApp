@@ -1,0 +1,125 @@
+@inject IJSRuntime JS
+
+@* Reusable Discount Card Component *@
+<div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow mb-6">
+    <div class="p-6">
+        <!-- Header with Logo and Name -->
+        <div class="flex items-center space-x-3 mb-4">
+            <img src="@MerchantLogo" alt="@MerchantName logo" class="h-10 w-10 rounded-full object-contain" />
+            <h4 class="text-lg font-semibold text-gray-900">@MerchantName</h4>
+        </div>
+
+        <!-- Description -->
+        <p class="text-gray-600 mb-4">@Description</p>
+
+        <!-- Discount Badge -->
+        <div class="bg-gray-100 px-3 py-1 rounded-md inline-block mb-4">
+            <span class="text-2xl font-bold text-gray-900">@DiscountPercentage%</span>
+            <span class="text-gray-600">rabatt</span>
+        </div>
+
+        @if (ShowCode)
+        {
+            <!-- Discount Code Section (for claimed codes) -->
+            <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <p class="text-sm text-gray-600 mb-2">Din rabattkode:</p>
+                <div class="flex items-center gap-2">
+                    <code
+                        class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
+                                        @DiscountCode
+                                    </code>
+                    <button @onclick="HandleCopyCode"
+                        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
+                        @if (isCopied)
+                        {
+                            <span>✓</span>
+                        }
+                        else
+                        {
+                            <span>Kopier</span>
+                        }
+                    </button>
+                </div>
+            </div>
+
+            <!-- Link to Merchant Website -->
+            <a href="@MerchantWebsite" target="_blank"
+                class="mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
+                Besøk @MerchantName nettside
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+            </a>
+        }
+        else
+        {
+            <!-- Action Button (for available discounts) -->
+            <div class="flex items-center justify-between mt-4">
+                <button @onclick="OnAction"
+                    class="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-150 ease-out">
+                    <span
+                        class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease pointer-events-none"></span>
+                    <div class="flex items-center space-x-2">
+                        <span>@ActionButtonText</span>
+                        <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private bool isCopied = false;
+
+    [Parameter]
+    public string MerchantName { get; set; } = "";
+
+    [Parameter]
+    public string MerchantLogo { get; set; } = "";
+
+    [Parameter]
+    public string Description { get; set; } = "";
+
+    [Parameter]
+    public int DiscountPercentage { get; set; }
+
+    [Parameter]
+    public bool ShowCode { get; set; } = false;
+
+    [Parameter]
+    public string DiscountCode { get; set; } = "";
+
+    [Parameter]
+    public string MerchantWebsite { get; set; } = "";
+
+    [Parameter]
+    public EventCallback OnAction { get; set; }
+
+    [Parameter]
+    public string ActionButtonText { get; set; } = "Kjøp";
+
+    private async Task HandleCopyCode()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("navigator.clipboard.writeText", DiscountCode);
+            isCopied = true;
+            StateHasChanged();
+
+            // Reset the "Copied!" message after 2 seconds
+            await Task.Delay(2000);
+            isCopied = false;
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Failed to copy to clipboard: {ex.Message}");
+        }
+    }
+}
