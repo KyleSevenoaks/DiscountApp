@@ -6,102 +6,17 @@
 <h1>Mine Koder</h1>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow max-w-sm mb-6">
-        <div class="p-6">
-            <div class="flex items-center space-x-3 mb-4">
-                <img src="@claimedOffers[0].MerchantLogo" alt="@claimedOffers[0].MerchantName logo"
-                    class="h-10 w-10 rounded-full object-contain" />
-                <h4 class="text-lg font-semibold text-gray-900">@claimedOffers[0].MerchantName</h4>
-            </div>
-            <p class="text-gray-600 mb-4">@claimedOffers[0].Description</p>
-            <div class="bg-gray-100 px-3 py-1 rounded-md inline-block mb-4">
-                <span class="text-2xl font-bold text-gray-900">@claimedOffers[0].DiscountPercentage%</span>
-                <span class="text-gray-600">rabatt</span>
-            </div>
-
-            <!-- Discount Code Section -->
-            <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                <p class="text-sm text-gray-600 mb-2">Din rabattkode:</p>
-                <div class="flex items-center gap-2">
-                    <code
-                        class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
-                        ODEON25OFF
-                    </code>
-                    <button @onclick="CopyToClipboard"
-                        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
-                        @if (copied)
-                        {
-                            <span>✓ Kopiert!</span>
-                        }
-                        else
-                        {
-                            <span>Kopier</span>
-                        }
-                    </button>
-                </div>
-            </div>
-
-            <!-- Link to Merchant Website -->
-            <a href="@claimedOffers[0].MerchantWebsite" target="_blank"
-                class="bg-blue-600 mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
-                Besøk @claimedOffers[0].MerchantName nettside
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow max-w-sm">
-    <div class="p-6">
-        <div class="flex items-center space-x-3 mb-4">
-            <img src="@claimedOffers[1].MerchantLogo" alt="@claimedOffers[1].MerchantName logo"
-                class="h-10 w-10 rounded-full object-contain" />
-            <h4 class="text-lg font-semibold text-gray-900">@claimedOffers[1].MerchantName</h4>
-        </div>
-        <p class="text-gray-600 mb-4">@claimedOffers[1].Description</p>
-        <div class="bg-gray-100 px-3 py-1 rounded-md inline-block mb-4">
-            <span class="text-2xl font-bold text-gray-900">@claimedOffers[1].DiscountPercentage%</span>
-            <span class="text-gray-600">rabatt</span>
-        </div>
-
-        <!-- Discount Code Section -->
-        <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-            <p class="text-sm text-gray-600 mb-2">Din rabattkode:</p>
-            <div class="flex items-center gap-2">
-                <code
-                    class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
-                        NFKINO50OFF
-                    </code>
-                <button @onclick="CopyToClipboard"
-                    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
-                    @if (copied)
-                    {
-                        <span>✓ Copied!</span>
-                    }
-                    else
-                    {
-                        <span>Kopier</span>
-                    }
-                </button>
-            </div>
-            <a href="https://www.nfkino.no" target="_blank" rel="noopener noreferrer"
-                class="bg-blue-600 mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
-                Besøk @claimedOffers[1].MerchantName nettside
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                </svg>
-            </a>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @foreach (var offer in claimedOffers)
+        {
+            <DiscountCard MerchantName="@offer.MerchantName" MerchantLogo="@offer.MerchantLogo"
+                Description="@offer.Description" DiscountPercentage="@offer.DiscountPercentage" ShowCode="true"
+                DiscountCode="@GetDiscountCode(offer.Id)" MerchantWebsite="@offer.MerchantWebsite" />
+        }
     </div>
 </div>
 
 @code {
-    private bool copied = false;
-
     private UserProfile currentUser = new()
     {
         Name = "Kyle Sevenoaks",
@@ -109,23 +24,16 @@
         UnionName = "Tech Workers Union"
     };
 
-    private async Task CopyToClipboard()
+    private string GetDiscountCode(int offerId)
     {
-        try
+        return offerId switch
         {
-            await JS.InvokeVoidAsync("navigator.clipboard.writeText", "ODEON25OFF");
-            copied = true;
-            StateHasChanged();
-
-            // Reset the "Copied!" message after 2 seconds
-            await Task.Delay(2000);
-            copied = false;
-            StateHasChanged();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Failed to copy to clipboard: {ex.Message}");
-        }
+            1 => "ODEON25OFF",
+            2 => "NFKINO50OFF",
+            3 => "AMAZON30OFF",
+            4 => "UBEREATS20OFF",
+            _ => "UNKNOWN"
+        };
     }
 
     private List<DiscountOffer> claimedOffers = new()
@@ -148,7 +56,7 @@ Description = "Ekstra rabaterte priser på kinobilletter for medlemmer",
 DiscountPercentage = 50,
 MerchantWebsite = "https://www.nfkino.no"
 },
-new DiscountOffer
+@* new DiscountOffer
 {
 Id = 3,
 MerchantName = "Amazon",
@@ -165,7 +73,7 @@ MerchantLogo = "https://ui-avatars.com/api/?name=Uber+Eats&background=000000&col
 Description = "Save on your next 3 food deliveries",
 DiscountPercentage = 20,
 MerchantWebsite = "https://www.ubereats.com"
-}
+} *@
 };
 
     public class UserProfile
