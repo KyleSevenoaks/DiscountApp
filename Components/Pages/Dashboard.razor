@@ -6,9 +6,9 @@
 
 @if (showModal && selectedDiscount != null)
 {
-    <Modal Title="Confirm Discount Claim"
-           Message=@($"Are you sure you want to claim this {selectedDiscount.DiscountPercentage}% discount from {selectedDiscount.MerchantName}?")
-           ConfirmText="Confirm Claim"
+    <Modal Title="Confirm Discount Purchase"
+           Message=@($"Are you sure you want to buy this {selectedDiscount.DiscountPercentage}% discount code from {selectedDiscount.MerchantName}?")
+           ConfirmText="Confirm purchase"
            CancelText="Cancel"
            OnConfirm="ConfirmClaim"
            OnCancel="CancelClaim" />
@@ -71,7 +71,7 @@
                                     <span
                                         class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease pointer-events-none"></span>
                                     <div class="flex items-center space-x-2">
-                                        <span>Claim Now</span>
+                                        <span>Buy</span>
                                         <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -91,6 +91,7 @@
 
 
 @inject IJSRuntime JS
+@inject NavigationManager NavigationManager
 
 @code {
     private UserProfile currentUser = new()
@@ -151,17 +152,16 @@ ExpiresIn = 2
         StateHasChanged();
     }
 
-    private async Task ConfirmClaim()
+    private void ConfirmClaim()
     {
         if (selectedDiscount != null)
         {
             Console.WriteLine($"ClaimDiscount invoked for id={selectedDiscount.Id}, selected={selectedDiscount.MerchantName}");
             availableDiscounts.Remove(selectedDiscount);
             showModal = false;
-            // Also log to browser console so we can see client-side that Blazor handler executed
-            try { await JS.InvokeVoidAsync("console.log", $"Blazor handler: ClaimDiscount invoked for id={selectedDiscount.Id}"); }
-            catch { }
             selectedDiscount = null;
+            // Redirect to VippsRedirect page
+            NavigationManager.NavigateTo("/vipps-redirect", forceLoad: true);
         }
     }
 
