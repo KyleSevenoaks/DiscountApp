@@ -4,11 +4,11 @@
 @inject NavigationManager NavigationManager
 
 <div class="vippsfake">
-    <p>Redirecting to Vipps... (@countdown seconds)</p>
+    <p>Omdirigerer til Vipps... (@countdown sekunder)</p>
 </div>
 
 @code {
-    private int countdown = 10;
+    private int countdown = 5;
     private CancellationTokenSource? cts;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

@@ -3,7 +3,7 @@
 @using Microsoft.AspNetCore.Components.Web
 @inject IJSRuntime JS
 
-<h1>My Codes</h1>
+<h1>Mine Koder</h1>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
     <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow max-w-sm mb-6">
@@ -16,12 +16,12 @@
             <p class="text-gray-600 mb-4">@claimedOffers[0].Description</p>
             <div class="bg-gray-100 px-3 py-1 rounded-md inline-block mb-4">
                 <span class="text-2xl font-bold text-gray-900">@claimedOffers[0].DiscountPercentage%</span>
-                <span class="text-gray-600">off</span>
+                <span class="text-gray-600">rabatt</span>
             </div>
 
             <!-- Discount Code Section -->
             <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                <p class="text-sm text-gray-600 mb-2">Your discount code:</p>
+                <p class="text-sm text-gray-600 mb-2">Din rabattkode:</p>
                 <div class="flex items-center gap-2">
                     <code
                         class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
@@ -31,68 +31,70 @@
                         class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
                         @if (copied)
                         {
-                            <span>✓ Copied!</span>
+                            <span>✓ Kopiert!</span>
                         }
                         else
                         {
-                            <span>Copy</span>
+                            <span>Kopier</span>
                         }
                     </button>
                 </div>
-                <a href="https://www.odeonkino.no" target="_blank" rel="noopener noreferrer"
-                    class="bg-blue-600 mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
-                    Visit @claimedOffers[0].MerchantName Website
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </a>
             </div>
+
+            <!-- Link to Merchant Website -->
+            <a href="@claimedOffers[0].MerchantWebsite" target="_blank"
+                class="bg-blue-600 mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
+                Besøk @claimedOffers[0].MerchantName nettside
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+            </a>
         </div>
     </div>
+</div>
 
-    <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow max-w-sm">
-        <div class="p-6">
-            <div class="flex items-center space-x-3 mb-4">
-                <img src="@claimedOffers[1].MerchantLogo" alt="@claimedOffers[1].MerchantName logo"
-                    class="h-10 w-10 rounded-full object-contain" />
-                <h4 class="text-lg font-semibold text-gray-900">@claimedOffers[1].MerchantName</h4>
-            </div>
-            <p class="text-gray-600 mb-4">@claimedOffers[1].Description</p>
-            <div class="bg-gray-100 px-3 py-1 rounded-md inline-block mb-4">
-                <span class="text-2xl font-bold text-gray-900">@claimedOffers[1].DiscountPercentage%</span>
-                <span class="text-gray-600">off</span>
-            </div>
+<div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow max-w-sm">
+    <div class="p-6">
+        <div class="flex items-center space-x-3 mb-4">
+            <img src="@claimedOffers[1].MerchantLogo" alt="@claimedOffers[1].MerchantName logo"
+                class="h-10 w-10 rounded-full object-contain" />
+            <h4 class="text-lg font-semibold text-gray-900">@claimedOffers[1].MerchantName</h4>
+        </div>
+        <p class="text-gray-600 mb-4">@claimedOffers[1].Description</p>
+        <div class="bg-gray-100 px-3 py-1 rounded-md inline-block mb-4">
+            <span class="text-2xl font-bold text-gray-900">@claimedOffers[1].DiscountPercentage%</span>
+            <span class="text-gray-600">rabatt</span>
+        </div>
 
-            <!-- Discount Code Section -->
-            <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                <p class="text-sm text-gray-600 mb-2">Your discount code:</p>
-                <div class="flex items-center gap-2">
-                    <code
-                        class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
+        <!-- Discount Code Section -->
+        <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+            <p class="text-sm text-gray-600 mb-2">Din rabattkode:</p>
+            <div class="flex items-center gap-2">
+                <code
+                    class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
                         NFKINO50OFF
                     </code>
-                    <button @onclick="CopyToClipboard"
-                        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
-                        @if (copied)
-                        {
-                            <span>✓ Copied!</span>
-                        }
-                        else
-                        {
-                            <span>Copy</span>
-                        }
-                    </button>
-                </div>
-                <a href="https://www.nfkino.no" target="_blank" rel="noopener noreferrer"
-                    class="bg-blue-600 mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
-                    Visit @claimedOffers[1].MerchantName Website
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </a>
+                <button @onclick="CopyToClipboard"
+                    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
+                    @if (copied)
+                    {
+                        <span>✓ Copied!</span>
+                    }
+                    else
+                    {
+                        <span>Kopier</span>
+                    }
+                </button>
             </div>
+            <a href="https://www.nfkino.no" target="_blank" rel="noopener noreferrer"
+                class="bg-blue-600 mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
+                Besøk @claimedOffers[1].MerchantName nettside
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+            </a>
         </div>
     </div>
 </div>
@@ -135,7 +137,7 @@ MerchantName = "Odeon",
 MerchantLogo = "https://ui-avatars.com/api/?name=Odeon&background=396eca&color=fff",
 Description = "Rabaterte priser på kinobilletter for medlemmer",
 DiscountPercentage = 25,
-ExpiresIn = 5
+MerchantWebsite = "https://www.odeonkino.no"
 },
 new DiscountOffer
 {
@@ -144,7 +146,7 @@ MerchantName = "NF Kino",
 MerchantLogo = "https://ui-avatars.com/api/?name=NF+Kino&background=e91b72&color=fff",
 Description = "Ekstra rabaterte priser på kinobilletter for medlemmer",
 DiscountPercentage = 50,
-ExpiresIn = 1
+MerchantWebsite = "https://www.nfkino.no"
 },
 new DiscountOffer
 {
@@ -153,7 +155,7 @@ MerchantName = "Amazon",
 MerchantLogo = "https://ui-avatars.com/api/?name=Amazon&background=FF9900&color=fff",
 Description = "Prime membership discount for first-time subscribers",
 DiscountPercentage = 30,
-ExpiresIn = 7
+MerchantWebsite = "https://www.amazon.com"
 },
 new DiscountOffer
 {
@@ -162,7 +164,7 @@ MerchantName = "Uber Eats",
 MerchantLogo = "https://ui-avatars.com/api/?name=Uber+Eats&background=000000&color=fff",
 Description = "Save on your next 3 food deliveries",
 DiscountPercentage = 20,
-ExpiresIn = 2
+MerchantWebsite = "https://www.ubereats.com"
 }
 };
 
@@ -180,6 +182,6 @@ ExpiresIn = 2
         public string MerchantLogo { get; set; } = "";
         public string Description { get; set; } = "";
         public int DiscountPercentage { get; set; }
-        public int ExpiresIn { get; set; }
+        public string MerchantWebsite { get; set; } = "";
     }
 }

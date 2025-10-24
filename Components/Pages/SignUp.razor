@@ -1,37 +1,37 @@
 @page "/signup"
 @using Microsoft.AspNetCore.Components.Web
 
-<PageTitle>Fordelstorget | Sign Up</PageTitle>
+<PageTitle>Fordelstorget | Registrer deg</PageTitle>
 
 <div class="min-h-screen flex items-center justify-center bg-gray-50">
     <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
         <div class="text-center">
-            <h2 class="text-3xl font-bold text-gray-900">Create an account</h2>
-            <p class="mt-2 text-sm text-gray-600">Join Fordelstorget today</p>
+            <h2 class="text-3xl font-bold text-gray-900">Opprett en konto</h2>
+            <p class="mt-2 text-sm text-gray-600">Bli med i Fordelstorget i dag</p>
         </div>
         <form class="mt-8 space-y-6" @onsubmit="HandleSignUp">
             <div class="space-y-4">
                 <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">Full name</label>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Fullt navn</label>
                     <input id="name" name="name" type="text" required
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                         @bind="name" />
                 </div>
                 <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                    <label for="email" class="block text-sm font-medium text-gray-700">E-postadresse</label>
                     <input id="email" name="email" type="email" required
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                         @bind="email" />
                 </div>
                 <div>
-                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Passord</label>
                     <input id="password" name="password" type="password" required
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                         @bind="password" />
                 </div>
                 <div>
-                    <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm
-                        password</label>
+                    <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Bekreft
+                        passord</label>
                     <input id="confirmPassword" name="confirmPassword" type="password" required
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                         @bind="confirmPassword" />
@@ -41,15 +41,15 @@
             <div>
                 <button type="submit"
                     class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    Create account
+                    Opprett konto
                 </button>
             </div>
         </form>
 
         <div class="text-center mt-4">
             <p class="text-sm text-gray-600">
-                Already have an account?
-                <a href="/" class="font-medium text-blue-600 hover:text-blue-500">Sign in here</a>
+                Har du allerede en konto?
+                <a href="/" class="font-medium text-blue-600 hover:text-blue-500">Logg inn her</a>
             </p>
         </div>
     </div>
