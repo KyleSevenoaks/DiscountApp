@@ -26,6 +26,17 @@
             }
         </div>
 
+        <!-- Available codes badge -->
+        @if (ShowAvailableCodes)
+        {
+            <div class="flex justify-end -mt-2 mb-4">
+                <span
+                    class="inline-flex items-center px-2 py-1 text-xs font-medium rounded-full bg-orange-50 text-orange-700 border border-orange-200">
+                    Koder igjen: @AvailableCodes
+                </span>
+            </div>
+        }
+
         @if (ShowCode)
         {
             <!-- Discount Code Section (for claimed codes) -->
@@ -34,8 +45,8 @@
                 <div class="flex items-center gap-2">
                     <code
                         class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
-                                                @DiscountCode
-                                            </code>
+                                                        @DiscountCode
+                                                    </code>
                     <button @onclick="HandleCopyCode"
                         class="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-400 transition-colors">
                         @if (isCopied)
@@ -117,6 +128,12 @@
 
     [Parameter]
     public string ActionButtonText { get; set; } = "Kjøp";
+
+    [Parameter]
+    public int AvailableCodes { get; set; }
+
+    [Parameter]
+    public bool ShowAvailableCodes { get; set; } = true;
 
     private async Task HandleCopyCode()
     {
