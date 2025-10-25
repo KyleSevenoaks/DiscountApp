@@ -81,4 +81,4 @@
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/DiscountApp.sourcelink.json
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/93g004vv5n-z4kv9dgzoa.gz
 /Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/xky5b16azr-z4kv9dgzoa.gz
-/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-unsyr9uoyg.gz
+/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-3sxpv97gq1.gz

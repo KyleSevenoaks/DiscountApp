@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8hxFdgnxJ5bvNDTmK5hkOxmDJYN5wq7GjTLOzRCa8+s=",
+  "Hash": "gVSxzLtE/alamamCQ6NmUGjgnpE0I3EqMFpJRp/r908=",
   "Source": "DiscountApp",
   "BasePath": "_content/DiscountApp",
   "Mode": "Default",
@@ -185,12 +185,12 @@
       "OriginalItemSpec": "/Users/kyle/git/DiscountApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-unsyr9uoyg.gz",
+      "Identity": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-3sxpv97gq1.gz",
       "SourceId": "DiscountApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DiscountApp",
-      "RelativePath": "css/styles#[.{fingerprint=unsyr9uoyg}]?.css.gz",
+      "RelativePath": "css/styles#[.{fingerprint=3sxpv97gq1}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -199,8 +199,8 @@
       "RelatedAsset": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dszf8hr2jv",
-      "Integrity": "E4EwZYn57tu3FLHetzJ6o/9pF8Yf0GwnmhNHH+83DbM=",
+      "Fingerprint": "2yal7my9z5",
+      "Integrity": "qgmE3EBR0MtYUtd5iPRgZph59theiDigBVOw/LfxUS4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css"
@@ -1144,8 +1144,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "unsyr9uoyg",
-      "Integrity": "mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM=",
+      "Fingerprint": "3sxpv97gq1",
+      "Integrity": "QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/styles.css"
@@ -2694,13 +2694,13 @@
       ]
     },
     {
-      "Route": "css/styles.css",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-unsyr9uoyg.gz",
+      "Route": "css/styles.3sxpv97gq1.css",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-3sxpv97gq1.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000176709666"
+          "Quality": "0.000171850833"
         }
       ],
       "ResponseHeaders": [
@@ -2710,19 +2710,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5658"
+          "Value": "5818"
         },
         {
           "Name": "ETag",
-          "Value": "\"E4EwZYn57tu3FLHetzJ6o/9pF8Yf0GwnmhNHH+83DbM=\""
+          "Value": "\"qgmE3EBR0MtYUtd5iPRgZph59theiDigBVOw/LfxUS4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 10:07:40 GMT"
+          "Value": "Sat, 25 Oct 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2738,18 +2738,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM=\""
+          "Value": "W/\"QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "3sxpv97gq1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM="
+          "Value": "sha256-QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA="
         }
       ]
     },
     {
-      "Route": "css/styles.css",
+      "Route": "css/styles.3sxpv97gq1.css",
       "AssetFile": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2759,7 +2767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27393"
+          "Value": "28773"
         },
         {
           "Name": "Content-Type",
@@ -2767,121 +2775,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM=\""
+          "Value": "\"QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 10:07:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css.gz",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-unsyr9uoyg.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5658"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"E4EwZYn57tu3FLHetzJ6o/9pF8Yf0GwnmhNHH+83DbM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 10:07:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-E4EwZYn57tu3FLHetzJ6o/9pF8Yf0GwnmhNHH+83DbM="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.unsyr9uoyg.css",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-unsyr9uoyg.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000176709666"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5658"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"E4EwZYn57tu3FLHetzJ6o/9pF8Yf0GwnmhNHH+83DbM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 10:07:40 GMT"
+          "Value": "Sat, 25 Oct 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "unsyr9uoyg"
+          "Value": "3sxpv97gq1"
         },
         {
           "Name": "label",
@@ -2889,13 +2797,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM="
+          "Value": "sha256-QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA="
         }
       ]
     },
     {
-      "Route": "css/styles.unsyr9uoyg.css",
-      "AssetFile": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css",
+      "Route": "css/styles.3sxpv97gq1.css.gz",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-3sxpv97gq1.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2904,7 +2812,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27393"
+          "Value": "5818"
         },
         {
           "Name": "Content-Type",
@@ -2912,56 +2820,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM=\""
+          "Value": "\"qgmE3EBR0MtYUtd5iPRgZph59theiDigBVOw/LfxUS4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 10:07:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "unsyr9uoyg"
-        },
-        {
-          "Name": "label",
-          "Value": "css/styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mmTokaiTk4pBxYUM91ArKfdZR4fKh4oUtehhOdR6GyM="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.unsyr9uoyg.css.gz",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-unsyr9uoyg.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5658"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"E4EwZYn57tu3FLHetzJ6o/9pF8Yf0GwnmhNHH+83DbM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 10:07:40 GMT"
+          "Value": "Sat, 25 Oct 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2979,7 +2842,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "unsyr9uoyg"
+          "Value": "3sxpv97gq1"
         },
         {
           "Name": "label",
@@ -2987,7 +2850,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-E4EwZYn57tu3FLHetzJ6o/9pF8Yf0GwnmhNHH+83DbM="
+          "Value": "sha256-qgmE3EBR0MtYUtd5iPRgZph59theiDigBVOw/LfxUS4="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-3sxpv97gq1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000171850833"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5818"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgmE3EBR0MtYUtd5iPRgZph59theiDigBVOw/LfxUS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Oct 2025 10:28:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Oct 2025 10:28:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QyqY+s1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-3sxpv97gq1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgmE3EBR0MtYUtd5iPRgZph59theiDigBVOw/LfxUS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Oct 2025 10:28:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qgmE3EBR0MtYUtd5iPRgZph59theiDigBVOw/LfxUS4="
         }
       ]
     },
