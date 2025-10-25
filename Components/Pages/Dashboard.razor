@@ -7,7 +7,7 @@
 @if (showModal && selectedDiscount != null)
 {
     <Modal Title="Bekreft rabattkjøp"
-           Message=@($"Er du sikker på at du vil kjøpe denne {selectedDiscount.DiscountPercentage}% rabattkoden fra {selectedDiscount.MerchantName}?")
+           Message=@($"Er du sikker på at du vil kjøpe denne {selectedDiscount.DiscountPercentage}% rabattkoden fra {selectedDiscount.MerchantName} for {FormatPrice(selectedDiscount.Price)}?")
            ConfirmText="Bekreft kjøp"
            CancelText="Avbryt"
            OnConfirm="ConfirmClaim"
@@ -61,6 +61,9 @@
 @inject NavigationManager NavigationManager
 
 @code {
+    private static readonly System.Globalization.CultureInfo NbNo = System.Globalization.CultureInfo.GetCultureInfo("nb-NO");
+    private string FormatPrice(decimal price) => price.ToString("C0", NbNo);
+
     private UserProfile currentUser = new()
     {
         Name = "Kyle Sevenoaks",
@@ -76,8 +79,8 @@ Id = 1,
 MerchantName = "Odeon",
 MerchantLogo = "https://ui-avatars.com/api/?name=Odeon&background=396eca&color=fff",
 Description = "Rabaterte priser på kinobilletter for medlemmer",
-DiscountPercentage = 25,
-Price = 49m
+DiscountPercentage = 100,
+Price = 89m
 },
 new DiscountOffer
 {
@@ -85,8 +88,8 @@ Id = 2,
 MerchantName = "NF Kino",
 MerchantLogo = "https://ui-avatars.com/api/?name=NF+Kino&background=e91b72&color=fff",
 Description = "Ekstra rabaterte priser på kinobilletter for medlemmer",
-DiscountPercentage = 50,
-Price = 39m
+DiscountPercentage = 100,
+Price = 89m
 },
 new DiscountOffer
 {

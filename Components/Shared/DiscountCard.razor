@@ -29,15 +29,15 @@
         @if (ShowCode)
         {
             <!-- Discount Code Section (for claimed codes) -->
-            <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+            <div class="mt-4 p-4 bg-orange-50 rounded-lg border border-orange-200">
                 <p class="text-sm text-gray-600 mb-2">Din rabattkode:</p>
                 <div class="flex items-center gap-2">
                     <code
                         class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
-                                            @DiscountCode
-                                        </code>
+                                                @DiscountCode
+                                            </code>
                     <button @onclick="HandleCopyCode"
-                        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
+                        class="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-400 transition-colors">
                         @if (isCopied)
                         {
                             <span>✓</span>
@@ -52,7 +52,7 @@
 
             <!-- Link to Merchant Website -->
             <a href="@MerchantWebsite" target="_blank"
-                class="mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
+                class="mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
                 Besøk @MerchantName nettside
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -65,7 +65,7 @@
             <!-- Action Button (for available discounts) -->
             <div class="flex items-center justify-between mt-4">
                 <button @onclick="OnAction"
-                    class="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-150 ease-out">
+                    class="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-150 ease-out">
                     <span
                         class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease pointer-events-none"></span>
                     <div class="flex items-center space-x-2">

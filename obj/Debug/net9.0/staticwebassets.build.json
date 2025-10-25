@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PbdUj7M1KY+/sFX8MBQTQTNbRtuwFnjjVH9GoGIAZ54=",
+  "Hash": "s2xjCWNebEGawUr+IA0v9KZSPX07Z1AOKzp+g7KQXb4=",
   "Source": "DiscountApp",
   "BasePath": "_content/DiscountApp",
   "Mode": "Default",
@@ -185,12 +185,12 @@
       "OriginalItemSpec": "/Users/kyle/git/DiscountApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-s3x5qtpzq0.gz",
+      "Identity": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-qaa7o5oxh6.gz",
       "SourceId": "DiscountApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DiscountApp",
-      "RelativePath": "css/styles#[.{fingerprint=s3x5qtpzq0}]?.css.gz",
+      "RelativePath": "css/styles#[.{fingerprint=qaa7o5oxh6}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -199,8 +199,8 @@
       "RelatedAsset": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "r5m5kf8m0i",
-      "Integrity": "by9OERa9LssNLt1nHIDn5DY8iM9Sbnfk1Z1L2Q/Hyho=",
+      "Fingerprint": "3tlf0ayppi",
+      "Integrity": "J+RqdqUthKU3/vg4fghFYuvtTg/F0auGk7XvaYAvRfM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css"
@@ -1144,8 +1144,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "s3x5qtpzq0",
-      "Integrity": "KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI=",
+      "Fingerprint": "qaa7o5oxh6",
+      "Integrity": "HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/styles.css"
@@ -2695,12 +2695,12 @@
     },
     {
       "Route": "css/styles.css",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-s3x5qtpzq0.gz",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-qaa7o5oxh6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000177556818"
+          "Quality": "0.000181225082"
         }
       ],
       "ResponseHeaders": [
@@ -2710,15 +2710,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5631"
+          "Value": "5517"
         },
         {
           "Name": "ETag",
-          "Value": "\"by9OERa9LssNLt1nHIDn5DY8iM9Sbnfk1Z1L2Q/Hyho=\""
+          "Value": "\"J+RqdqUthKU3/vg4fghFYuvtTg/F0auGk7XvaYAvRfM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Oct 2025 15:31:14 GMT"
+          "Value": "Sat, 25 Oct 2025 09:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2738,13 +2738,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI=\""
+          "Value": "W/\"HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI="
+          "Value": "sha256-HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk="
         }
       ]
     },
@@ -2759,7 +2759,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27124"
+          "Value": "26222"
         },
         {
           "Name": "Content-Type",
@@ -2767,11 +2767,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI=\""
+          "Value": "\"HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Oct 2025 15:31:14 GMT"
+          "Value": "Sat, 25 Oct 2025 09:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2781,13 +2781,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI="
+          "Value": "sha256-HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk="
         }
       ]
     },
     {
       "Route": "css/styles.css.gz",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-s3x5qtpzq0.gz",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-qaa7o5oxh6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2796,7 +2796,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5631"
+          "Value": "5517"
         },
         {
           "Name": "Content-Type",
@@ -2804,11 +2804,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"by9OERa9LssNLt1nHIDn5DY8iM9Sbnfk1Z1L2Q/Hyho=\""
+          "Value": "\"J+RqdqUthKU3/vg4fghFYuvtTg/F0auGk7XvaYAvRfM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Oct 2025 15:31:14 GMT"
+          "Value": "Sat, 25 Oct 2025 09:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2826,18 +2826,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-by9OERa9LssNLt1nHIDn5DY8iM9Sbnfk1Z1L2Q/Hyho="
+          "Value": "sha256-J+RqdqUthKU3/vg4fghFYuvtTg/F0auGk7XvaYAvRfM="
         }
       ]
     },
     {
-      "Route": "css/styles.s3x5qtpzq0.css",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-s3x5qtpzq0.gz",
+      "Route": "css/styles.qaa7o5oxh6.css",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-qaa7o5oxh6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000177556818"
+          "Quality": "0.000181225082"
         }
       ],
       "ResponseHeaders": [
@@ -2847,15 +2847,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5631"
+          "Value": "5517"
         },
         {
           "Name": "ETag",
-          "Value": "\"by9OERa9LssNLt1nHIDn5DY8iM9Sbnfk1Z1L2Q/Hyho=\""
+          "Value": "\"J+RqdqUthKU3/vg4fghFYuvtTg/F0auGk7XvaYAvRfM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Oct 2025 15:31:14 GMT"
+          "Value": "Sat, 25 Oct 2025 09:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2875,13 +2875,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI=\""
+          "Value": "W/\"HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s3x5qtpzq0"
+          "Value": "qaa7o5oxh6"
         },
         {
           "Name": "label",
@@ -2889,12 +2889,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI="
+          "Value": "sha256-HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk="
         }
       ]
     },
     {
-      "Route": "css/styles.s3x5qtpzq0.css",
+      "Route": "css/styles.qaa7o5oxh6.css",
       "AssetFile": "/Users/kyle/git/DiscountApp/wwwroot/css/styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2904,7 +2904,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27124"
+          "Value": "26222"
         },
         {
           "Name": "Content-Type",
@@ -2912,11 +2912,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI=\""
+          "Value": "\"HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Oct 2025 15:31:14 GMT"
+          "Value": "Sat, 25 Oct 2025 09:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2926,7 +2926,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s3x5qtpzq0"
+          "Value": "qaa7o5oxh6"
         },
         {
           "Name": "label",
@@ -2934,13 +2934,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KItHPgpbuFLRmYF/pxfP6ioxTCT8G1cgzY2T1ku8aSI="
+          "Value": "sha256-HsQlfppXt/ykwQue+hfaPe9UCARjFCHJmwYynfNObHk="
         }
       ]
     },
     {
-      "Route": "css/styles.s3x5qtpzq0.css.gz",
-      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-s3x5qtpzq0.gz",
+      "Route": "css/styles.qaa7o5oxh6.css.gz",
+      "AssetFile": "/Users/kyle/git/DiscountApp/obj/Debug/net9.0/compressed/64359075vm-qaa7o5oxh6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2949,7 +2949,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5631"
+          "Value": "5517"
         },
         {
           "Name": "Content-Type",
@@ -2957,11 +2957,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"by9OERa9LssNLt1nHIDn5DY8iM9Sbnfk1Z1L2Q/Hyho=\""
+          "Value": "\"J+RqdqUthKU3/vg4fghFYuvtTg/F0auGk7XvaYAvRfM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Oct 2025 15:31:14 GMT"
+          "Value": "Sat, 25 Oct 2025 09:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2979,7 +2979,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s3x5qtpzq0"
+          "Value": "qaa7o5oxh6"
         },
         {
           "Name": "label",
@@ -2987,7 +2987,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-by9OERa9LssNLt1nHIDn5DY8iM9Sbnfk1Z1L2Q/Hyho="
+          "Value": "sha256-J+RqdqUthKU3/vg4fghFYuvtTg/F0auGk7XvaYAvRfM="
         }
       ]
     },
