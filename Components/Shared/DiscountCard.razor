@@ -12,10 +12,18 @@
         <!-- Description -->
         <p class="text-gray-600 mb-4">@Description</p>
 
-        <!-- Discount Badge -->
-        <div class="bg-gray-100 px-3 py-1 rounded-md inline-block mb-4">
-            <span class="text-2xl font-bold text-gray-900">@DiscountPercentage%</span>
-            <span class="text-gray-600">rabatt</span>
+        <!-- Discount and Price Row -->
+        <div class="flex items-center justify-between mb-4">
+            <div class="bg-gray-100 px-3 py-1 rounded-md inline-block">
+                <span class="text-2xl font-bold text-gray-900">@DiscountPercentage%</span>
+                <span class="text-gray-600">rabatt</span>
+            </div>
+            @if (Price > 0)
+            {
+                <div class="px-3 py-1 rounded-md bg-gray-100 text-gray-900 font-semibold">
+                    @FormattedPrice
+                </div>
+            }
         </div>
 
         @if (ShowCode)
@@ -26,8 +34,8 @@
                 <div class="flex items-center gap-2">
                     <code
                         class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
-                                        @DiscountCode
-                                    </code>
+                                            @DiscountCode
+                                        </code>
                     <button @onclick="HandleCopyCode"
                         class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">
                         @if (isCopied)
@@ -76,6 +84,9 @@
 
 @code {
     private bool isCopied = false;
+    private static readonly System.Globalization.CultureInfo NbNo =
+    System.Globalization.CultureInfo.GetCultureInfo("nb-NO");
+    private string FormattedPrice => Price.ToString("C0", NbNo);
 
     [Parameter]
     public string MerchantName { get; set; } = "";
@@ -91,6 +102,9 @@
 
     [Parameter]
     public bool ShowCode { get; set; } = false;
+
+    [Parameter]
+    public decimal Price { get; set; }
 
     [Parameter]
     public string DiscountCode { get; set; } = "";

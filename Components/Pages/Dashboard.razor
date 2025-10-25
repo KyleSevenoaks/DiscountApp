@@ -45,6 +45,7 @@
                         MerchantLogo="@discount.MerchantLogo"
                         Description="@discount.Description"
                         DiscountPercentage="@discount.DiscountPercentage"
+                        Price="@discount.Price"
                         ShowCode="false"
                         ActionButtonText="Kjøp"
                         OnAction="() => ShowClaimModal(discount)" />
@@ -75,7 +76,8 @@ Id = 1,
 MerchantName = "Odeon",
 MerchantLogo = "https://ui-avatars.com/api/?name=Odeon&background=396eca&color=fff",
 Description = "Rabaterte priser på kinobilletter for medlemmer",
-DiscountPercentage = 25
+DiscountPercentage = 25,
+Price = 49m
 },
 new DiscountOffer
 {
@@ -83,7 +85,8 @@ Id = 2,
 MerchantName = "NF Kino",
 MerchantLogo = "https://ui-avatars.com/api/?name=NF+Kino&background=e91b72&color=fff",
 Description = "Ekstra rabaterte priser på kinobilletter for medlemmer",
-DiscountPercentage = 50
+DiscountPercentage = 50,
+Price = 39m
 },
 new DiscountOffer
 {
@@ -91,7 +94,8 @@ Id = 3,
 MerchantName = "Amazon",
 MerchantLogo = "https://ui-avatars.com/api/?name=Amazon&background=FF9900&color=fff",
 Description = "Prime membership discount for first-time subscribers",
-DiscountPercentage = 30
+DiscountPercentage = 30,
+Price = 29m
 },
 new DiscountOffer
 {
@@ -99,7 +103,8 @@ Id = 4,
 MerchantName = "Uber Eats",
 MerchantLogo = "https://ui-avatars.com/api/?name=Uber+Eats&background=000000&color=fff",
 Description = "Save on your next 3 food deliveries",
-DiscountPercentage = 20
+DiscountPercentage = 20,
+Price = 19m
 }
 };
 
@@ -147,6 +152,7 @@ DiscountPercentage = 20
         public string MerchantLogo { get; set; } = "";
         public string Description { get; set; } = "";
         public int DiscountPercentage { get; set; }
+        public decimal Price { get; set; }
     }
 
 

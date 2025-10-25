@@ -10,8 +10,8 @@
         @foreach (var offer in claimedOffers)
         {
             <DiscountCard MerchantName="@offer.MerchantName" MerchantLogo="@offer.MerchantLogo"
-                Description="@offer.Description" DiscountPercentage="@offer.DiscountPercentage" ShowCode="true"
-                DiscountCode="@GetDiscountCode(offer.Id)" MerchantWebsite="@offer.MerchantWebsite" />
+                Description="@offer.Description" DiscountPercentage="@offer.DiscountPercentage" Price="@offer.Price"
+                ShowCode="true" DiscountCode="@GetDiscountCode(offer.Id)" MerchantWebsite="@offer.MerchantWebsite" />
         }
     </div>
 </div>
@@ -45,7 +45,8 @@ MerchantName = "Odeon",
 MerchantLogo = "https://ui-avatars.com/api/?name=Odeon&background=396eca&color=fff",
 Description = "Rabaterte priser på kinobilletter for medlemmer",
 DiscountPercentage = 25,
-MerchantWebsite = "https://www.odeonkino.no"
+Price = 49m,
+MerchantWebsite = "https://www.odeonkino.no/pa-kino-na"
 },
 new DiscountOffer
 {
@@ -54,6 +55,7 @@ MerchantName = "NF Kino",
 MerchantLogo = "https://ui-avatars.com/api/?name=NF+Kino&background=e91b72&color=fff",
 Description = "Ekstra rabaterte priser på kinobilletter for medlemmer",
 DiscountPercentage = 50,
+Price = 39m,
 MerchantWebsite = "https://www.nfkino.no"
 },
 @* new DiscountOffer
@@ -90,6 +92,7 @@ MerchantWebsite = "https://www.ubereats.com"
         public string MerchantLogo { get; set; } = "";
         public string Description { get; set; } = "";
         public int DiscountPercentage { get; set; }
+        public decimal Price { get; set; }
         public string MerchantWebsite { get; set; } = "";
     }
 }
