@@ -24,17 +24,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vsibofc2sk"},{"Name":"integrity","Value":"sha256-7yc8gjHODkwoDJwl1HBbeNVbQ8kK3ZxIF5Qsr5VQDXw="},{"Name":"label","Value":"_content/DiscountApp/css/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"104"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227yc8gjHODkwoDJwl1HBbeNVbQ8kK3ZxIF5Qsr5VQDXw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Oct 2025 20:55:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DiscountApp/css/styles.3sxpv97gq1.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3sxpv97gq1"},{"Name":"integrity","Value":"sha256-QyqY\u002Bs1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA="},{"Name":"label","Value":"_content/DiscountApp/css/styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28773"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QyqY\u002Bs1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Oct 2025 10:28:40 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DiscountApp/css/styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QyqY\u002Bs1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"28773"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QyqY\u002Bs1Ek/Jdc79KyCbSiaXlPhVx65RIHbM6PWGf8lA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Oct 2025 10:28:40 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8yGxANkdqU9SHutsccbej9jJsyzN2e9tCIj\u002BefSceZE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29518"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228yGxANkdqU9SHutsccbej9jJsyzN2e9tCIj\u002BefSceZE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Oct 2025 11:03:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DiscountApp/css/styles.rmgjzxeh6y.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rmgjzxeh6y"},{"Name":"integrity","Value":"sha256-8yGxANkdqU9SHutsccbej9jJsyzN2e9tCIj\u002BefSceZE="},{"Name":"label","Value":"_content/DiscountApp/css/styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29518"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228yGxANkdqU9SHutsccbej9jJsyzN2e9tCIj\u002BefSceZE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Oct 2025 11:03:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DiscountApp/DiscountApp.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DiscountApp.z4kv9dgzoa.bundle.scp.css'))</AssetFile>

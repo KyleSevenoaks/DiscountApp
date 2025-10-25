@@ -45,8 +45,8 @@
                 <div class="flex items-center gap-2">
                     <code
                         class="flex-1 px-3 py-2 bg-white border border-gray-300 rounded font-mono text-lg font-bold text-gray-900">
-                                                        @DiscountCode
-                                                    </code>
+                                                                @DiscountCode
+                                                            </code>
                     <button @onclick="HandleCopyCode"
                         class="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-400 transition-colors">
                         @if (isCopied)
@@ -61,15 +61,15 @@
                 </div>
             </div>
 
-            <!-- Link to Merchant Website -->
-            <a href="@MerchantWebsite" target="_blank"
+            <!-- Link to Merchant Website (in-app webview) -->
+            <button @onclick="NavigateToWebView"
                 class="mt-4 w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
-                Besøk @MerchantName nettside
+                Åpne nettsiden i appen
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                 </svg>
-            </a>
+            </button>
         }
         else
         {
@@ -95,6 +95,8 @@
 
 @code {
     private bool isCopied = false;
+    [Inject]
+    private NavigationManager Navigation { get; set; } = default!;
     private static readonly System.Globalization.CultureInfo NbNo =
     System.Globalization.CultureInfo.GetCultureInfo("nb-NO");
     private string FormattedPrice => Price.ToString("C0", NbNo);
@@ -152,5 +154,14 @@
         {
             Console.WriteLine($"Failed to copy to clipboard: {ex.Message}");
         }
+    }
+
+    private void NavigateToWebView()
+    {
+        // Build query with encoded parameters
+        var url = Uri.EscapeDataString(MerchantWebsite ?? string.Empty);
+        var code = Uri.EscapeDataString(DiscountCode ?? string.Empty);
+        var merchant = Uri.EscapeDataString(MerchantName ?? string.Empty);
+        Navigation.NavigateTo($"/webview?url={url}&code={code}&merchant={merchant}", forceLoad: true);
     }
 }
