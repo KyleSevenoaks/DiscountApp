@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/kyle/git/DiscountApp/Components/Layout/MobileNav.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTW9iaWxlTmF2LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kyle/git/DiscountApp/Components/Pages/ClaimedCodes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DbGFpbWVkQ29kZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

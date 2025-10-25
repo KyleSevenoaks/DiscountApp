@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiscountApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d105315ba8af81da72d9129dc5d976b258b6ea5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f88902db4a911e7d8990315c3aa17932136a13d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiscountApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiscountApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
