@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"77781weob2"},{"Name":"integrity","Value":"sha256-jSgAT3MxcTyoR5jRXurtao5cXgZPo7YQlIS64vizTa4="},{"Name":"label","Value":"_content/DiscountApp/css/styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29939"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jSgAT3MxcTyoR5jRXurtao5cXgZPo7YQlIS64vizTa4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Oct 2025 11:48:46 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29939"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jSgAT3MxcTyoR5jRXurtao5cXgZPo7YQlIS64vizTa4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 Oct 2025 07:24:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DiscountApp/css/styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jSgAT3MxcTyoR5jRXurtao5cXgZPo7YQlIS64vizTa4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29939"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jSgAT3MxcTyoR5jRXurtao5cXgZPo7YQlIS64vizTa4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Oct 2025 11:48:46 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29939"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jSgAT3MxcTyoR5jRXurtao5cXgZPo7YQlIS64vizTa4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 Oct 2025 07:24:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DiscountApp/DiscountApp.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DiscountApp.z4kv9dgzoa.bundle.scp.css'))</AssetFile>
